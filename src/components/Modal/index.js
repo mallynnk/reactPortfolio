@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Modal = ({ onClose, currentApp }) => {
-    const { name, category, description, GitHub, site, index } = currentApp;
+const Modal = ({ onClose, currentApplication }) => {
+    const { name, category, description, GitHub, site, index } = currentApplication;
 
     return (
         <div className="modalBackdrop">

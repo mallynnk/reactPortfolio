@@ -1,25 +1,17 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
 
-const Apps = ({ category }) => {
+const ApplicationList = ({ category }) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const [apps] = useState([
+  const [applications] = useState([
     {
-      // image: 'https://github.com/rachelf0/reactportfolio/raw/master/src/assets/img/large/front/0.jpg',
       name: 'Horiseon',
       category: 'front',
       description: '',
       GitHub: 'https://github.com/mallynnk/Horiseon-Refactor',
       site:'https://mallynnk.github.io/Horiseon-Refactor/',
-    },
-    {
-      name: 'Taskinator',
-      category: 'front',
-      description: 'An app for keeping tasks organized',
-      GitHub: '',
-      site:'',
     },
     {
       name: 'Code Quiz',
@@ -107,7 +99,7 @@ const Apps = ({ category }) => {
     }
   ]);
 
-  const currentApplications = apps.filter((application) => application.category === category);
+  const currentApplications = applications.filter((application) => application.category === category);
   const [currentApplication, setCurrentApplication] = useState();
 
 
@@ -136,4 +128,4 @@ const Apps = ({ category }) => {
   );
 };
 
-export default Apps;
+export default ApplicationList;
