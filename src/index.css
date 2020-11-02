@@ -16,12 +16,14 @@ main {
 	max-width: 90%;
   padding: 50px 30px;
 }
+
+
 :root {
-  --primary: #006989;
-  --secondary: #A0B2A6;
-  --tertiary: #EABDA8;
-  --light: #CBBFBB;
-  --dark: #493843;
+  --primary: #E3C8C1;
+  --secondary: #D38975;
+  --tertiary: #DF9884;
+  --light: #DBB7AC;
+  --dark: #E3C8C1;
   --darker: #0E0F19;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -46,8 +48,8 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
-  color: var(--light);
+  background: var(--light);
+  color: var(--dar);
   font-family: 'helvetica';
 
 }

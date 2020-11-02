@@ -7,7 +7,7 @@ const Modal = ({ onClose, currentApplication }) => {
         <div className="modalBackdrop">
             <div className="modalContainer">
                 <h3 className="modalTitle">{name}</h3>
-                <img src={require(`../../assets/img/large/${category}/${index}.jpg`)} alt="current category" />
+                <img src={require(`../../assets/img/large/${category}/${index}.png`)} alt="current category" />
                 <p>{description}</p>
                 <p><a href={GitHub} target="_blank" rel="noopener noreferrer">Repository</a></p>
                 {(site !== 'NA') ? (
