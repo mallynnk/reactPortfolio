@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer>
             <a className="footer-link" href="https://github.com/mallynnk">
-                <img src={gitHubLogo} alt="GitHub Repository" width="64" height="64"/>
+                {/* <img src={gitHubLogo} alt="GitHub Repository" width="64" height="64"/> */}
             </a>
         </footer>
     );

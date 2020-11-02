@@ -1,23 +1,19 @@
 import React, { useState } from 'react';
-import './App.css';
 import About from './components/About';
 import Nav from './components/Nav';
 import Apps from './components/Apps';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import './App.css';
 
 function App() {
-    const [contactSelected, setContactSelected] = useState(false);
+   
     const [categories] = useState([
-      {
-        name: 'commercial',
-        description: 'Photos of grocery stores, food trucks, and other commercial projects',
-      },
-      { name: 'portraits', description: 'Portraits of people in my life' },
-      { name: 'food', description: 'Delicious delicacies' },
-      { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
-    ]);
+        {name: 'front', description: 'Front End Projects'},
+        { name: 'back', description: 'Back End Projects'},
+        { name: 'full', description: 'Front and Back End Projects'}
+      ]);
     
     const [currentCategory, setCurrentCategory] = useState(categories[0]);
     const [currentPage, handlePageChange] = useState('About');
