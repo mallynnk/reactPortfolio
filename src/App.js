@@ -5,7 +5,7 @@ import Applications from './components/Applications';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
-import './App.css';
+// import './App.css';
 
 function App() {
    
