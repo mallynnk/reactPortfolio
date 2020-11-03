@@ -5,14 +5,14 @@ import Applications from './components/Applications';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
-// import './App.css';
+
 
 function App() {
    
     const [categories] = useState([
         {name: 'front', description: 'Front End Projects'},
-        { name: 'back', description: 'Back End Projects'},
-        { name: 'full', description: 'Front and Back End Projects'}
+        {name: 'back', description: 'Back End Projects'},
+        {name: 'full', description: 'Front and Back End Projects'}
       ]);
     
     const [currentCategory, setCurrentCategory] = useState(categories[0]);
