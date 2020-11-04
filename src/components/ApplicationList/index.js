@@ -1,5 +1,22 @@
 import React, { useState } from 'react';
 import Modal from '../Modal';
+import front0 from '../../assets/img/large/front/0.png'
+import front1 from '../../assets/img/large/front/1.png'
+import front2 from '../../assets/img/large/front/2.png'
+import front3 from '../../assets/img/large/front/3.png'
+import back0 from '../../assets/img/large/back/0.png'
+import back1 from '../../assets/img/large/back/1.png'
+import back2 from '../../assets/img/large/back/2.png'
+import back3 from '../../assets/img/large/back/3.png'
+import back4 from '../../assets/img/large/back/4.png'
+import full0 from '../../assets/img/large/full/0.png'
+import full1 from '../../assets/img/large/full/1.png'
+import full2 from '../../assets/img/large/full/2.png'
+import full3 from '../../assets/img/large/full/3.png'
+
+const images = { 
+  front0, front1, front2, front3, back0, back1, back2, back3, back4, full0, full1, full2, full3,
+}
 
 const ApplicationList = ({ category }) => {
 
@@ -77,6 +94,13 @@ const ApplicationList = ({ category }) => {
       site:'https://glacial-lowlands-59045.herokuapp.com',
     },
     {
+      name: 'Ask Father Time',
+      category: 'full',
+      description: '',
+      GitHub: 'https://github.com/nosremetnarg/askFatherTime',
+      site:'https://mighty-meadow-10557.herokuapp.com/',
+    },
+    {
       name: 'News by the Map',
       category: 'full',
       description: '',
@@ -90,13 +114,7 @@ const ApplicationList = ({ category }) => {
       GitHub: 'https://github.com/mallynnk/budget-tracker',
       site:'https://polar-inlet-39292.herokuapp.com/',
     },
-    {
-      name: 'Ask Father Time',
-      category: 'full',
-      description: 'A MERN stack application built for those seeking to try and share exquisite cocktail recipes.',
-      GitHub: 'https://github.com/nosremetnarg/askFatherTime',
-      site:'https://mighty-meadow-10557.herokuapp.com/',
-    }
+  
   ]);
 
   const currentApplications = applications.filter((application) => application.category === category);
@@ -108,6 +126,7 @@ const ApplicationList = ({ category }) => {
     setIsModalOpen(!isModalOpen);
   }
 
+  
   return (
     <div>
       {isModalOpen && (
@@ -115,8 +134,9 @@ const ApplicationList = ({ category }) => {
       )}
       <div className="flex-row">
         {currentApplications.map((image, i) => (
-          <img
-            src={require(`../../assets/img/large/${category}/${i}.png`)}
+
+          <img 
+            src={images[`${category}${i}`]}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
