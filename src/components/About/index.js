@@ -11,7 +11,7 @@ function About() {
             </div>
             <div className="bio">
                 <p>
-                My name is Mallory Korpics, and I have been the Operations Manager at a neurofeedback (mental health) clinic since its early start-up days in 2017. Working for a neurofeedback company, 
+                My name is Mallory Willeke, and I have been the Operations Manager at a neurofeedback (mental health) clinic since its early start-up days in 2017. Working for a neurofeedback company, 
                 I have been deeply embedded in an innovative environment focused on helping clients reach their full potential. 
                 Due to some life changes, I decided to enroll in a full stack coding bootcamp and pursue a development career.
 

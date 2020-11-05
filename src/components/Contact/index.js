@@ -43,10 +43,10 @@ function ContactForm() {
     return (
         <section>
             <h1 data-testid="h1tag">Contact me</h1>
-            <div id="contact-card" className="card">
+            <div id="contact-card" className="">
                 <div className="card-body">
                     {/* <h1 className="card-title">Contact Me</h1> */}
-                    <div className="card" style={{width:"100rem"}}>
+                    <div className="" style={{width:"100rem"}}>
                     <form id="contact-form" onSubmit={handleSubmit}>
                         <div className="px-2">
                             <label htmlFor="Name">Name:</label>
@@ -68,7 +68,7 @@ function ContactForm() {
                                 <p className="error-text">{errorMessage}</p>
                             </div>
                         )}
-                        <button className="btn btn-primary m-2" type="submit">Submit</button>
+                         <button className="button" type="submit">Submit</button>
                     </form>
                     </div>
                 </div>

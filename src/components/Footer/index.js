@@ -1,15 +1,17 @@
 import React from 'react';
-// import gitHubLogo from "../../assets/GitHub-Mark.png"
-
 
 function Footer() {
     return (
-        <footer>
-            <a className="footer-link" href="https://github.com/mallynnk">
-                {/* <img src={gitHubLogo} alt="GitHub Repository" width="64" height="64"/> */}
-            </a>
+        <footer className="">
+            <p className="">    
+                <a className="btn btn-outline-dark btn-social mx-1" 
+                    href="https://github.com/mallynnk">
+                        <i className="fab fa-fw fa-github fa-lg" style={{background:"SkyBlue"}}></i></a>
+            </p>
+            <h4>I look forward to hearing from you</h4>
+            <p>Copyright © Mallory Willeke 2020</p>
         </footer>
-    );
+    )
 }
 
 export default Footer;
