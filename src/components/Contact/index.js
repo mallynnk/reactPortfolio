@@ -39,29 +39,44 @@ function ContactForm() {
         console.log(formState);
     }
 
+
     return (
         <section>
             <h1 data-testid="h1tag">Contact me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-                </div>
-                <div>
-                    <label htmlFor="email">Email address:</label>
-                    <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
-                </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-                </div>
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
+            <div id="contact-card" className="card">
+                <div className="card-body">
+                    {/* <h1 className="card-title">Contact Me</h1> */}
+                    <div className="card" style={{width:"100rem"}}>
+                    <form id="contact-form" onSubmit={handleSubmit}>
+                        <div className="px-2">
+                            <label htmlFor="Name">Name:</label>
+                            <br/>
+                            <input type="text" name="Name" defaultValue={name} onBlur={handleChange} style={{width:"50%"}}/>
+                        </div>
+                        <div className="px-2">
+                            <label htmlFor="email">Email address:</label>
+                            <br/>
+                            <input type="email" name="email" defaultValue={email} onBlur={handleChange} style={{width:"50%"}}/>
+                        </div>
+                        <div className="px-2">
+                            <label htmlFor="Message">Message:</label>
+                            <br/>
+                            <textarea name="Message" rows="5" defaultValue={message} onBlur={handleChange} style={{width:"50%"}}/>
+                        </div>
+                        {errorMessage && (
+                            <div className="px-2">
+                                <p className="error-text">{errorMessage}</p>
+                            </div>
+                        )}
+                        <button className="btn btn-primary m-2" type="submit">Submit</button>
+                    </form>
                     </div>
-                )}
-                <button data-testid="button" type="submit">Submit</button>
-            </form>
+                </div>
+            </div>
+        
+
+
+        
         </section>
     );
 
