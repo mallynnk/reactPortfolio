@@ -51,9 +51,21 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background-image: url('../src/assets/img/background.png');
+  /* background-image: url('../src/assets/img/laptops.png');
+  background-size: cover; */
   color: var(--dar);
   font-family: 'Assistant', sans-serif;
+}
+
+.hero {
+  background-image: url("assets/img/laptops.png");  
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+  width: 100%;
+  /* opacity: .40; */
 }
 
 h1,
@@ -111,6 +123,7 @@ a:hover {
 header {
   padding: 2rem;
   margin-left: 2rem;
+  width: 100%;
 }
 
 /* header a {

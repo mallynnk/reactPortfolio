@@ -40,6 +40,7 @@ function App() {
   
     return (
       <div className="page-container">
+        
         <Nav
           categories={categories}
           setCurrentCategory={setCurrentCategory}
@@ -47,12 +48,16 @@ function App() {
           currentPage={currentPage}
           handlePageChange={handlePageChange}
       ></Nav>
+       <div class="hero">
+
+       </div>
         <main>
 
           <div>{renderPage(currentPage)}</div>
 
        </main>
       <Footer />
+      
       </div>
     );
     }
