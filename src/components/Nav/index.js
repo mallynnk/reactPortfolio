@@ -22,7 +22,7 @@ function Nav(props) {
         <header className="flex-row px-1">
             <h2>
                 <a data-testid="link" href="/">
-                    Mallory Korpics
+                    Mallory Willeke
         </a>
             </h2>
             <nav>

@@ -37,22 +37,23 @@ main {
 
 * {
   box-sizing: border-box;
+
 }
 
 html,
 body {
-  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-weight: 600;
+  max-width: 100%;
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  /* background-image: url('../src/assets/img/laptops.png');
-  background-size: cover; */
   color: var(--dar);
   font-family: 'Assistant', sans-serif;
 }
@@ -64,8 +65,24 @@ body {
   display: flex;
   justify-content: center;
   height: 20rem;
-  width: 100%;
+  max-width: 100%;
   /* opacity: .40; */
+}
+
+.contact {
+  background-image: url("assets/img/contact.png");
+  background-size: cover;
+  padding: 10rem
+}
+
+.resume {
+  background-image: url("assets/img/weird.png");
+  background-size: cover;
+  padding: 20rem
+}
+
+.resumeText {
+  margin-bottom:20rem
 }
 
 h1,
@@ -126,9 +143,6 @@ header {
   width: 100%;
 }
 
-/* header a {
-  color: var(--light);
-} */
 
 button {
   font-size: 1rem;
