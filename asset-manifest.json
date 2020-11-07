@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/reactPortfolio/static/css/main.bb4e8177.chunk.css",
+    "main.js": "/reactPortfolio/static/js/main.3db5faa5.chunk.js",
+    "main.js.map": "/reactPortfolio/static/js/main.3db5faa5.chunk.js.map",
+    "runtime-main.js": "/reactPortfolio/static/js/runtime-main.50190d58.js",
+    "runtime-main.js.map": "/reactPortfolio/static/js/runtime-main.50190d58.js.map",
+    "static/js/2.d92ff443.chunk.js": "/reactPortfolio/static/js/2.d92ff443.chunk.js",
+    "static/js/2.d92ff443.chunk.js.map": "/reactPortfolio/static/js/2.d92ff443.chunk.js.map",
+    "index.html": "/reactPortfolio/index.html",
+    "static/css/main.bb4e8177.chunk.css.map": "/reactPortfolio/static/css/main.bb4e8177.chunk.css.map",
+    "static/js/2.d92ff443.chunk.js.LICENSE.txt": "/reactPortfolio/static/js/2.d92ff443.chunk.js.LICENSE.txt",
+    "static/media/0.011a5b54.png": "/reactPortfolio/static/media/0.011a5b54.png",
+    "static/media/0.49b94b91.png": "/reactPortfolio/static/media/0.49b94b91.png",
+    "static/media/0.87ba83d7.png": "/reactPortfolio/static/media/0.87ba83d7.png",
+    "static/media/1.b89319ce.png": "/reactPortfolio/static/media/1.b89319ce.png",
+    "static/media/1.d740c101.png": "/reactPortfolio/static/media/1.d740c101.png",
+    "static/media/1.e3b1ff75.png": "/reactPortfolio/static/media/1.e3b1ff75.png",
+    "static/media/2.19fcebbf.png": "/reactPortfolio/static/media/2.19fcebbf.png",
+    "static/media/2.8acee624.png": "/reactPortfolio/static/media/2.8acee624.png",
+    "static/media/2.993fc16a.png": "/reactPortfolio/static/media/2.993fc16a.png",
+    "static/media/3.9236b500.png": "/reactPortfolio/static/media/3.9236b500.png",
+    "static/media/3.d7e06de5.png": "/reactPortfolio/static/media/3.d7e06de5.png",
+    "static/media/3.e7b1e495.png": "/reactPortfolio/static/media/3.e7b1e495.png",
+    "static/media/4.4072e929.png": "/reactPortfolio/static/media/4.4072e929.png",
+    "static/media/index.css": "/reactPortfolio/static/media/weird.197b0e63.png",
+    "static/media/profPic.90fabf95.png": "/reactPortfolio/static/media/profPic.90fabf95.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50190d58.js",
+    "static/js/2.d92ff443.chunk.js",
+    "static/css/main.bb4e8177.chunk.css",
+    "static/js/main.3db5faa5.chunk.js"
+  ]
+}
