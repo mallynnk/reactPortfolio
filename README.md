@@ -29,7 +29,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 **[Deployed Application](https://mallynnk.github.io/reactPortfolio/)**
 
 ## Screenshot
-![Screenshot](src/img/assets/screenshot1.png)
+![Screenshot](src/assets/img/screenshot1.png)
 ![Screenshot](src/assets/img/screenshot2.png)
 
 
