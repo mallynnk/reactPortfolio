@@ -3,6 +3,7 @@
 ## Table of Contents
   - [User Story](#user-story)
   - [Description](#description)
+  - [Screenshot](#screenshot)
   - [Available Scripts](#available-scripts)
   - [`npm start`](#npm-start)
   - [`npm test`](#npm-test)
@@ -26,6 +27,11 @@ SO THAT I can assess whether they're a good candidate for an open position
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Personal full stack development portfolio.
 
 **[Deployed Application](https://mallynnk.github.io/reactPortfolio/)**
+
+## Screenshot
+![Screenshot](src/img/screenshot1.png)
+![Screenshot](src/img/screenshot2.png)
+
 
 ## Available Scripts
 
