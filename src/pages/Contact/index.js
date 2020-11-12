@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import Hero from '../../components/Hero'
 
-function ContactForm() {
+function Contact() {
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
@@ -41,11 +42,11 @@ function ContactForm() {
 
 
     return (
-        <section class="contact">
+        <section>
+            <div class="contact"> 
             <h1 data-testid="h1tag">Contact me</h1>
             <div id="contact-card" className="">
                 <div className="card-body">
-                    {/* <h1 className="card-title">Contact Me</h1> */}
                     <div className="" style={{width:"100rem"}}>
                     <form id="contact-form" onSubmit={handleSubmit}>
                         <div className="px-2">
@@ -71,15 +72,12 @@ function ContactForm() {
                          <button className="button" type="submit">Submit</button>
                     </form>
                     </div>
+                    </div>
                 </div>
-            </div>
-        
-
-
-        
+                </div>
         </section>
     );
 
 }
 
-export default ContactForm;
+export default Contact;

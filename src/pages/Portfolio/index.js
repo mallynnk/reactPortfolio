@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
+import Hero from '../../components/Hero'
 import front0 from '../../assets/img/PortfolioImages/front0.png'
 import front1 from '../../assets/img/PortfolioImages/front1.png'
 import front2 from '../../assets/img/PortfolioImages/front2.png'

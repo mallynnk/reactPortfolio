@@ -1,25 +1,29 @@
-import React, { useEffect } from 'react';
-import { Link } from "react-router-dom";
-import Hero from '../Hero'
+import React from 'react';
+import Nav from 'react-bootstrap/Nav'
 
-function Nav() {
+
+function Navigation() {
       return (
-        <ul >
-            <li>
-            <Link to="/">Mallory Willeke</Link>
-          </li>
-          <li>
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <h3>
-            <Link to="/contact">Contact</Link>
-          </h3>
-        </ul>
-      );
+        <Nav className="justify-content-center" activeKey="/about"
+          >
+        <Nav.Item >
+            <Nav.Link href="/">Mallory Willeke</Nav.Link>
+        </Nav.Item>
+        <Nav.Item >
+            <Nav.Link href="/about">About</Nav.Link>
+        </Nav.Item>
+        <Nav.Item >
+            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+        </Nav.Item>
+        <Nav.Item >
+            <Nav.Link href="/resume">Resume</Nav.Link>
+        </Nav.Item>
+        <Nav.Item >
+            <Nav.Link href="/contact">Contact</Nav.Link>
+        </Nav.Item>
+        </Nav> 
+      )
     }
   
-export default Nav;
+export default Navigation;
 
