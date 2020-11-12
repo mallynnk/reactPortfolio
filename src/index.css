@@ -58,13 +58,13 @@ body {
   font-family: 'Assistant', sans-serif;
 }
 
-.hero {
+.hero-image {
   background-image: url("assets/img/laptops.png");  
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
-  height: 20rem;
+  height: 30%;
   max-width: 100%;
   /* opacity: .40; */
 }
@@ -73,12 +73,6 @@ body {
   background-image: url("assets/img/contact.png");
   background-size: cover;
   padding: 10rem
-}
-
-.resume {
-  background-image: url("assets/img/weird.png");
-  background-size: cover;
-  padding: 20rem
 }
 
 .resumeText {

@@ -1,10 +1,12 @@
 import React from 'react';
 import profilePicture from '../../assets/img/profPic.png'
+import Hero from '../../components/Hero'
 
 function About() {
     return (
         
         <section className="about">
+            <div> <Hero></Hero>
             <div>
                 <h1 id="about">about me</h1>
                 <img className="profile-picture" src={profilePicture} alt="Mallory Korpics" />
@@ -33,6 +35,7 @@ function About() {
                 The difficulty in having to learn so many things in a growing company without supervision resulted in an enthusiasm for creating systems, honed my time-management and communication skills, and gave me a new kind of work ethic and perseverance. 
                 </p>
             </div>
+            </div> 
         </section>
     );
 }

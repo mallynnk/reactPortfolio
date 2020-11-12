@@ -1,58 +1,25 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import { Link } from "react-router-dom";
+import Hero from '../Hero'
 
-function Nav(props) {
-    const {
-        categories = [],
-        setCurrentCategory,
-        currentPage, 
-        handlePageChange
-    } = props;
-
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentPage);
-    }, [currentPage]);
-
-    function applicationClickHandler(category){
-        handlePageChange(capitalizeFirstLetter(category.name));
-        setCurrentCategory(category);
+function Nav() {
+      return (
+        <ul >
+            <li>
+            <Link to="/">Mallory Willeke</Link>
+          </li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <h3>
+            <Link to="/contact">Contact</Link>
+          </h3>
+        </ul>
+      );
     }
-
-    return (
-        <header className="flex-row px-1">
-            <h2>
-                <a data-testid="link" href="/">
-                    Mallory Willeke
-        </a>
-            </h2>
-            <nav>
-                <ul className="flex-row">
-                    <li className={`mx-2 ${currentPage === "About" && `navActive`}`}>
-                        <span onClick={()=>handlePageChange("About")} className={currentPage === "About" ? 'nav-link active' : 'nav-link'}>About me</span>
-                    </li>
-                    <li className={`mx-2 ${currentPage === "Contact" && `navActive`}`}>
-                        <span onClick={()=>handlePageChange("Contact")} className={currentPage === "Contact" ? 'nav-link active' : 'nav-link'}>Contact</span>
-                    </li>
-                    {categories.map((category) => (
-                        <li
-                            className={`mx-1 ${ currentPage === capitalizeFirstLetter(category.name) && `navActive`}`}
-                            key={category.name}
-                        >
-                            <span 
-                                onClick={()=> applicationClickHandler(category)}
-                                className={currentPage === capitalizeFirstLetter(category.name) ? 'nav-link active' : 'nav-link'}
-                                > 
-                                {capitalizeFirstLetter(category.name)}
-                                </span>
-                        </li>
-                    ))}
-                    <li className={`mx-2 ${currentPage === "Resume" && `navActive`}`}>
-                    <span onClick={()=>handlePageChange("Resume")} className={currentPage === "Resume" ? 'nav-link active' : 'nav-link'}>Resume</span>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    );
-}
-
+  
 export default Nav;
+
