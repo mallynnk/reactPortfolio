@@ -4,15 +4,6 @@ import front0 from '../../assets/img/PortfolioImages/front0.png'
 import front1 from '../../assets/img/PortfolioImages/front1.png'
 import front2 from '../../assets/img/PortfolioImages/front2.png'
 import front3 from '../../assets/img/PortfolioImages/front3.png'
-import back0 from '../../assets/img/PortfolioImages/back0.png'
-import back1 from '../../assets/img/PortfolioImages/back1.png'
-import back2 from '../../assets/img/PortfolioImages/back2.png'
-import back3 from '../../assets/img/PortfolioImages/back3.png'
-import back4 from '../../assets/img/PortfolioImages/back4.png'
-import full0 from '../../assets/img/PortfolioImages/full0.png'
-import full1 from '../../assets/img/PortfolioImages/full1.png'
-import full2 from '../../assets/img/PortfolioImages/full2.png'
-import full3 from '../../assets/img/PortfolioImages/full3.png'
 
 var style = {
   fontSize: "4rem",
@@ -24,35 +15,7 @@ var style = {
 
 function AppCarousel() {
 
-  // const [applications] = useState([
-  //   {
-  //     name: 'Horiseon',
-  //     category: 'front',
-  //     description: '',
-  //     GitHub: 'https://github.com/mallynnk/Horiseon-Refactor',
-  //     site:'https://mallynnk.github.io/Horiseon-Refactor/',
-  //   },
-  //   {
-  //     name: 'Code Quiz',
-  //     category: 'front',
-  //     description: 'An easy JavaScript knowledge quiz built with HMTL, CSS and JavaScript',
-  //     GitHub: 'https://github.com/mallynnk/code-quiz',
-  //     site:'https://mallynnk.github.io/code-quiz/',
-  //   },
-  //   {
-  //     name: 'Work Day Scheduler',
-  //     category: 'front',
-  //     description: 'An app for planning out your schedule for the work day',
-  //     GitHub: 'https://github.com/mallynnk/daily-schedule',
-  //     site:'https://mallynnk.github.io/daily-schedule/',
-  //   },
-  //   {
-  //     name: 'Weather Dashboard',
-  //     category: 'front',
-  //     description: 'A weather app using weather forecast information',
-  //     GitHub: 'https://github.com/mallynnk/weather-dashboard',
-  //     site:'https://mallynnk.github.io/weather-dashboard/',
-  //   },
+
   //   {
   //     name: 'Readme Generator',
   //     category: 'back',
@@ -119,57 +82,52 @@ function AppCarousel() {
   
   // ]);
 
+
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-  // const currentApplications = applications.filter((application) => application.category === category);
-  // const [currentApplication, setCurrentApplication] = useState();
 
 
-  // const toggleModal = (image, i) => {
-  //   setCurrentApplication({ ...image, index: i });
-  //   setIsModalOpen(!isModalOpen);
-  // }
-  // const carouselItems = {
-  
-  // }
 
   return (
 
       <Carousel activeIndex={index} onSelect={handleSelect} className="flex-row">
           <Carousel.Item>
+          <h2 style={{fontStyle: 'italic', textAlign: 'center'}}>Horiseon</h2>
           <img 
           className="d-block w-100" src={front0} alt="First Slide"/>
         <Carousel.Caption>
-            <h2 style={{fontStyle: 'italic'}}>front end</h2>
             <h4><a href="https://github.com/mallynnk/Horiseon-Refactor">Repository</a></h4>
             <h4><a href='https://mallynnk.github.io/Horiseon-Refactor/'>Site</a></h4>
         </Carousel.Caption>.
         </Carousel.Item> 
         <Carousel.Item>
+         <h2 style={{fontStyle: 'italic', textAlign: 'center'}}>Code Quiz</h2>
           <img className="d-block w-100" src={front1} alt="Second Slide"/>
         <Carousel.Caption>
-            <h2 style={{fontStyle: 'italic'}}>front end</h2>
-            <h4><a href="https://github.com/mallynnk/Horiseon-Refactor">Repository</a></h4>
-            <h4><a href='https://mallynnk.github.io/Horiseon-Refactor/'>Site</a></h4>
+            <p>an easy JavaScript knowledge quiz built with HMTL, CSS and JavaScript</p>
+            <h4><a href="https://github.com/mallynnk/code-quiz">Repository</a></h4>
+            <h4><a href='https://mallynnk.github.io/code-quiz/'>Site</a></h4>
         </Carousel.Caption>.
         </Carousel.Item> 
         <Carousel.Item>
+         <h2 style={{fontStyle: 'italic', textAlign: 'center'}}>Work Day Scheduler</h2>
           <img className="d-block w-100" src={front2} alt="Third Slide"/>
         <Carousel.Caption>
-            <h2 style={{fontStyle: 'italic'}}>front end</h2>
-            <h4><a href="https://github.com/mallynnk/Horiseon-Refactor">Repository</a></h4>
-            <h4><a href='https://mallynnk.github.io/Horiseon-Refactor/'>Site</a></h4>
+            <p>an app for planning out your schedule for the work day</p>
+            <h4><a href="https://github.com/mallynnk/daily-schedule">Repository</a></h4>
+            <h4><a href='https://mallynnk.github.io/daily-schedule/'>Site</a></h4>
         </Carousel.Caption>.
         </Carousel.Item> 
         <Carousel.Item>
+          <h2 style={{fontStyle: 'italic', textAlign: 'center'}}>Weather Dashboard</h2>
           <img className="d-block w-100" src={front3} alt="Fourth Slide"/>
         <Carousel.Caption>
-            <h2 style={{fontStyle: 'italic'}}>front end</h2>
-            <h4><a href="https://github.com/mallynnk/Horiseon-Refactor">Repository</a></h4>
-            <h4><a href='https://mallynnk.github.io/Horiseon-Refactor/'>Site</a></h4>
+            <p>a weather app using weather forecast information</p>
+            <h4><a href="https://github.com/mallynnk/weather-dashboard">Repository</a></h4>
+            <h4><a href='https://mallynnk.github.io/weather-dashboard/'>Site</a></h4>
         </Carousel.Caption>.
         </Carousel.Item> 
       </Carousel>

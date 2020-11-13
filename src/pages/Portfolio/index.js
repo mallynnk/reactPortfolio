@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from '../../components/Carousel'
+import BackCarousel from '../../components/BackCarousel'
 
 var style = {
   fontSize: "4rem",
@@ -18,6 +19,7 @@ function Portfolio() {
 
         <div>
         <Carousel></Carousel>
+        <BackCarousel></BackCarousel>
         </div>
         </div>
         </div>

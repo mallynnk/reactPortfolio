@@ -15,7 +15,6 @@ function Resume() {
 
     return (
         <Container id="resume">
-            {/* <div style={style}>Resume</div> */}
             <Row style={style} className="justify-content-md-center" >
             download my full <a href="https://github.com/mallynnk/reactportfolio/raw/master/src/assets/Resume_Willeke.pdf" class="link">  resume</a>
             </Row>

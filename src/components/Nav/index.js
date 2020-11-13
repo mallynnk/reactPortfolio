@@ -10,8 +10,7 @@ var style = {
 
 function Navigation() {
       return (
-        <Nav style={style} className="justify-content-center" activeKey="/about"
-          >
+        <Nav style={style} className="justify-content-center" activeKey="/about">
         <Nav.Item >
             <Nav.Link href="/about">About</Nav.Link>
         </Nav.Item>

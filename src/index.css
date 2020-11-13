@@ -322,6 +322,7 @@ a {
   max-width: 400px;
   height:auto;
   padding: 2rem;
+  border-radius: 1rem;
 }
 
 .page-container {
