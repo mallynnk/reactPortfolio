@@ -1,81 +1,69 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
-import Hero from '../../components/Hero'
+import Card from 'react-bootstrap/Card'
 
 function Contact() {
 
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
-    const [errorMessage, setErrorMessage] = useState('');
+    // const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    // const { name, email, message } = formState;
+    // const [errorMessage, setErrorMessage] = useState('');
 
-    function handleChange(e) {
+    // function handleChange(e) {
 
-        if (e.target.name === 'email') {
+    //     if (e.target.name === 'email') {
 
-            const isValid = validateEmail(e.target.value);
+    //         const isValid = validateEmail(e.target.value);
 
-            if (!isValid) {
-                setErrorMessage('Your email is invalid.');
-            } else {
+    //         if (!isValid) {
+    //             setErrorMessage('Your email is invalid.');
+    //         } else {
 
-                if (!e.target.value.length) {
-                    setErrorMessage(`${e.target.name} is required.`);
-                } else {
-                    setErrorMessage('');
-                }
-            }
+    //             if (!e.target.value.length) {
+    //                 setErrorMessage(`${e.target.name} is required.`);
+    //             } else {
+    //                 setErrorMessage('');
+    //             }
+    //         }
 
-        }
+    //     }
 
-        console.log('errorMessage', errorMessage);
+    //     console.log('errorMessage', errorMessage);
 
-        if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value });
-        }
+    //     if (!errorMessage) {
+    //         setFormState({ ...formState, [e.target.name]: e.target.value });
+    //     }
 
+    // }
+
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    //     console.log(formState);
+    // }
+
+
+    var style = {
+        fontSize: "4rem",
+        textAlign: "center",
+        fontWeight: 100
     }
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
-
 
     return (
-        <section>
-            <div class="contact"> 
-            <h1 data-testid="h1tag">Contact me</h1>
-            <div id="contact-card" className="">
-                <div className="card-body">
-                    <div className="" style={{width:"100rem"}}>
-                    <form id="contact-form" onSubmit={handleSubmit}>
-                        <div className="px-2">
-                            <label htmlFor="Name">Name:</label>
-                            <br/>
-                            <input type="text" name="Name" defaultValue={name} onBlur={handleChange} style={{width:"50%"}}/>
-                        </div>
-                        <div className="px-2">
-                            <label htmlFor="email">Email address:</label>
-                            <br/>
-                            <input type="email" name="email" defaultValue={email} onBlur={handleChange} style={{width:"50%"}}/>
-                        </div>
-                        <div className="px-2">
-                            <label htmlFor="Message">Message:</label>
-                            <br/>
-                            <textarea name="Message" rows="5" defaultValue={message} onBlur={handleChange} style={{width:"50%"}}/>
-                        </div>
-                        {errorMessage && (
-                            <div className="px-2">
-                                <p className="error-text">{errorMessage}</p>
-                            </div>
-                        )}
-                         <button className="button" type="submit">Submit</button>
-                    </form>
-                    </div>
-                    </div>
-                </div>
-                </div>
-        </section>
+        <div style={{padding: '20rem'}} className="contact">
+        <h1 style={style}>get in touch</h1>
+        <Card style={{color: '#5E7364', padding:'5rem', width: '18rem ', textAlign: 'center', alignItems: 'center', display:'contents'}}>  
+            <Card.Body> 
+            {/* <Card.Title style={{fontSize:'3rem'}} >Contact Information</Card.Title> */}
+            <Card.Text style={{fontSize:'2rem'}} > 
+             Phone: <a href="tel:6155555555">(330) 631 3168</a>
+            </Card.Text>
+            <Card.Text style={{fontSize:'2rem'}} >
+              Email: <a href="mailto:roysterss@gmail.com">mallory.willeke@gmail.com</a>
+            </Card.Text>
+            <Card.Link style={{fontSize:'2rem'}} href="https://github.com/mallynnk">GitHub</Card.Link>
+            <Card.Link style={{fontSize:'2rem'}} href="https://www.linkedin.com/in/mallory-korpics-087218170/">LinkedIn</Card.Link>
+            </Card.Body>
+        </Card>
+        </div>
     );
 
 }

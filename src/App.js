@@ -15,8 +15,9 @@ function App() {
     return (
       <Router>
       <div className="page-container">
-        <Nav />
-        <Hero />
+      <h1 href="/about">Mallory Willeke</h1>
+      <Nav></Nav>
+      <Hero></Hero>
         <Switch>
               <Route exact path="/" component={About} />
               <Route exact path="/about" component={About} />

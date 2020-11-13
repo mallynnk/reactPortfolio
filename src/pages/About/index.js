@@ -5,11 +5,18 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Media from 'react-bootstrap/Media'
 
+var style = {
+    fontSize: "4rem",
+    padding: "20px",
+    textAlign: "center",
+    fontWeight: 100
+}
+
 function About() {
     return (
-        <Container className="about">
+        <Container>
             <Row className="justify-content-md-center" id="about">
-                <Col>about me</Col>    
+                <Col style={style}>about me</Col>    
             </Row>
            <Row>
             <Col xs={4}>
