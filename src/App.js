@@ -15,11 +15,10 @@ function App() {
     return (
       <Router>
       <div className="page-container">
-      <h1 href="/about">Mallory Willeke</h1>
+      <h1>Mallory Willeke</h1>
       <Nav></Nav>
       <Hero></Hero>
         <Switch>
-              <Route exact path="/" component={About} />
               <Route exact path="/about" component={About} />
               <Route exact path="/resume" component={Resume} />
               <Route exact path="/portfolio" component={Portfolio} />
