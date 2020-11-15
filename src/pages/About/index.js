@@ -15,20 +15,19 @@ var style = {
 function About() {
     return (
         <Container>
-            <Row className="justify-content-md-center" id="about">
+            <Row className="" id="about">
                 <Col style={style}>about me</Col>    
             </Row>
            <Row>
-            <Col xs={4}>
+            <Col>
                 <Media> <img 
                  width={300}
                  height={500}
-                 className="mr-3"
                  src={profilePicture} 
                  alt="Mallory Korpics"
                 /> </Media>
             </Col>
-            <Col xs={7} className="bio">
+            <Col md={8} xs={1}>
                 <p>
                 My name is Mallory Willeke, and I have been the Operations Manager at a neurofeedback (mental health) clinic since its early start-up days in 2017. Working for a neurofeedback company, 
                 I have been deeply embedded in an innovative environment focused on helping clients reach their full potential. 

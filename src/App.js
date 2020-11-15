@@ -10,6 +10,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact'
 import Resume from './pages/Resume';
 
+
 function App() {
    
     return (
@@ -19,6 +20,7 @@ function App() {
       <Nav></Nav>
       <Hero></Hero>
         <Switch>
+              <Route exact path="/reactPortfolio" component={About} />
               <Route exact path="/about" component={About} />
               <Route exact path="/resume" component={Resume} />
               <Route exact path="/portfolio" component={Portfolio} />

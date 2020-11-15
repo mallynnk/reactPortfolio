@@ -1,8 +1,6 @@
 import React from 'react';
-import Hero from '../../components/Hero'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 var style = {
     fontSize: "4rem",
