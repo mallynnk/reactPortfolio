@@ -33,6 +33,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![Screenshot](src/assets/img/screenshot2.png)
 
 
+
 ## Available Scripts
 
 In the project directory, you can run:
