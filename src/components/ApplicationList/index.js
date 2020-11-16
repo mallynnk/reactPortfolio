@@ -13,9 +13,10 @@ import full0 from '../../assets/img/large/full/0.png'
 import full1 from '../../assets/img/large/full/1.png'
 import full2 from '../../assets/img/large/full/2.png'
 import full3 from '../../assets/img/large/full/3.png'
+import full4 from '../../assets/img/large/full/4.png'
 
 const images = { 
-  front0, front1, front2, front3, back0, back1, back2, back3, back4, full0, full1, full2, full3,
+  front0, front1, front2, front3, back0, back1, back2, back3, back4, full0, full1, full2, full3, full4
 }
 
 const ApplicationList = ({ category }) => {
@@ -114,7 +115,13 @@ const ApplicationList = ({ category }) => {
       GitHub: 'https://github.com/mallynnk/budget-tracker',
       site:'https://polar-inlet-39292.herokuapp.com/',
     },
-  
+    {
+      name: 'Royster',
+      category: 'full',
+      description: '',
+      GitHub: 'https://github.com/mallynnk/Pearls',
+      site:'https://young-shelf-14995.herokuapp.com/',
+    },
   ]);
 
   const currentApplications = applications.filter((application) => application.category === category);
