@@ -320,6 +320,9 @@ main {
   padding-bottom: 2.5rem;
 }
 
+.contact {
+  padding: 20rem;
+}
 footer {
   /* position: absolute; */
   width: 100%;
@@ -347,5 +350,32 @@ footer p {
  .row {
    display: contents;
    justify-content: center
+  }
+
+  p {
+    width: fit-content;
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Restcontainer {
+    padding: 0;
+    width: auto;
+  }
+  
+  .carousel-caption {
+    position: initial;
+    color: black;
+  }
+
+  .container {
+    overflow-x: hidden;
+    padding: 0
+  }
+  .contact {
+    padding: 1rem;
   }
 }
