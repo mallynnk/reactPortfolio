@@ -1,64 +1,34 @@
-import React, { useState } from 'react';
-import About from './components/About';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from './components/Nav';
-import Applications from './components/Applications';
-import ContactForm from './components/Contact';
-import Resume from './components/Resume';
 import Footer from './components/Footer';
+import Hero from './components/Hero'
+
+//import pages
+import About from "./pages/About";
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact'
+import Resume from './pages/Resume';
 
 
 function App() {
    
-    const [categories] = useState([
-        {name: 'front', description: 'Front End Projects'},
-        {name: 'back', description: 'Back End Projects'},
-        {name: 'full', description: 'Front and Back End Projects'}
-      ]);
-    
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
-    const [currentPage, handlePageChange] = useState('About');
-
-    const renderPage = () => {
-      switch (currentPage) {
-        case 'About':
-          return <About />;
-        case 'Contact':
-          return <ContactForm />;
-        case 'Front':
-          return <Applications currentCategory={categories[0]}></Applications>
-        case 'Back':
-          return <Applications currentCategory={categories[1]}></Applications>
-        case 'Full':
-          return <Applications currentCategory={categories[2]}></Applications>
-        case 'Resume':
-          return <Resume />;
-        default:
-          return <About />;
-      }
-    };
-    
-  
     return (
+      <Router>
       <div className="page-container">
-        
-        <Nav
-          categories={categories}
-          setCurrentCategory={setCurrentCategory}
-          currentCategory={currentCategory}
-          currentPage={currentPage}
-          handlePageChange={handlePageChange}
-      ></Nav>
-       <div class="hero">
-
-       </div>
-        <main>
-
-          <div>{renderPage(currentPage)}</div>
-
-       </main>
+      <h1>Mallory Willeke</h1>
+      <Nav></Nav>
+      <Hero></Hero>
+        <Switch>
+              <Route exact path="/reactPortfolio" component={About} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/resume" component={Resume} />
+              <Route exact path="/portfolio" component={Portfolio} />
+              <Route exact path="/contact" component={Contact} />
+        </Switch>
       <Footer />
-      
-      </div>
+      </ div>
+      </Router>
     );
     }
 

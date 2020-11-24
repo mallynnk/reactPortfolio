@@ -1,15 +1,33 @@
 import React from 'react';
 import profilePicture from '../../assets/img/profPic.png'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Media from 'react-bootstrap/Media'
+
+var style = {
+    fontSize: "4rem",
+    padding: "20px",
+    textAlign: "center",
+    fontWeight: 100
+}
 
 function About() {
     return (
-        
-        <section className="about">
-            <div>
-                <h1 id="about">about me</h1>
-                <img className="profile-picture" src={profilePicture} alt="Mallory Korpics" />
-            </div>
-            <div className="bio">
+        <Container>
+            <Row className="" id="about">
+                <Col style={style}>about me</Col>    
+            </Row>
+           <Row>
+            <Col>
+                <Media> <img 
+                 width={300}
+                 height={500}
+                 src={profilePicture} 
+                 alt="Mallory Korpics"
+                /> </Media>
+            </Col>
+            <Col md={8} xs={1}>
                 <p>
                 My name is Mallory Willeke, and I have been the Operations Manager at a neurofeedback (mental health) clinic since its early start-up days in 2017. Working for a neurofeedback company, 
                 I have been deeply embedded in an innovative environment focused on helping clients reach their full potential. 
@@ -32,8 +50,10 @@ function About() {
                 While I am new to the development world and still have much to learn, I am hopeful that my experience at a rapidly changing startup, passion for learning, and dedication to my work makes me a promising candidate for a development position. 
                 The difficulty in having to learn so many things in a growing company without supervision resulted in an enthusiasm for creating systems, honed my time-management and communication skills, and gave me a new kind of work ethic and perseverance. 
                 </p>
-            </div>
-        </section>
+            </Col>
+            </Row>
+        </Container>
+    
     );
 }
 

@@ -1,17 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Open+Sans:wght@300;700&family=Roboto:wght@100&family=Staatliches&display=swap');
 
 main {
@@ -44,6 +30,7 @@ html,
 body {
   box-sizing: border-box;
   overflow-x: hidden;
+  height: 100%
 }
 
 body {
@@ -58,23 +45,39 @@ body {
   font-family: 'Assistant', sans-serif;
 }
 
-.hero {
-  background-image: url("assets/img/laptops.png");  
+.jumbotron {
+  height:400px;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  height: 20rem;
-  max-width: 100%;
-  /* opacity: .40; */
+  background-position:center;
+  background-image:url('assets/img/laptops.png');
 }
+
+.slide {
+  display: flex;
+  align-items: center;
+}
+
+
+.Restcontainer {
+  padding: 9rem;
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-caption {
+  position: initial;
+  color: black;
+}
+
 
 .contact {
   background-image: url("assets/img/contact.png");
   background-size: cover;
   padding: 10rem
 }
-
 
 .resumeText {
   margin-bottom:20rem
@@ -92,8 +95,10 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
-  margin-bottom: 2rem;
+  font-size: 4rem;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
   color: #5E7364;
 }
 
@@ -124,8 +129,7 @@ p {
 }
 
 a {
-  /* color: var(--tertiary); */
-  text-decoration: none;
+  color:rgb(209, 205, 205);
 }
 
 a:hover {
@@ -137,7 +141,6 @@ header {
   margin-left: 2rem;
   width: 100%;
 }
-
 
 button {
   font-size: 1rem;
@@ -159,14 +162,6 @@ button[disabled] {
   cursor: default;
   opacity: .8;
 }
-
-/* img {
-  max-width: 100%;
-}
-
-span[role="img"] {
-  cursor: default;
-} */
 
 form {
   width: 40%;
@@ -282,30 +277,6 @@ textarea {
   cursor: pointer;
 }
 
-.modalBackdrop {
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-  background-color: var(--light);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 30rem;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
-}
-
 button {
 	background: var(--primary);
 	border: 0;
@@ -323,49 +294,44 @@ button {
 }
 
 a {
-	border-radius: 5px;
-	color: #5E7364;
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
+  color: #5E7364;	
+  padding-left: 1rem;
 }
 
 .navActive {
   color: var(--secondary);
 }
 
-.about{
-  display:flex;
+.row {
+  padding: 1rem;
 }
-
-.bio{
-  margin-top: 6.5rem;
-}
-
 .profile-picture{
   max-width: 400px;
   height:auto;
   padding: 2rem;
+  border-radius: 1rem;
 }
 
-.page-container{
+.page-container {
   position: relative;
   min-height: 100vh;
 }
 
-main{
+main {
   padding-bottom: 2.5rem;
 }
 
-
+.contact {
+  padding: 20rem;
+}
 footer {
   position: absolute;
   width: 100%;
   height: 2.5rem;
-  bottom: 0;
-  padding: 20px 25px;
+  left:0;
+  bottom:0;
+  right:0;
+  padding: 2rem;
 }
 
 footer h4 {
@@ -381,4 +347,39 @@ footer p {
   color: var(--darker);
   text-align: center;
   justify-content: center;
+}
+
+@media (max-width: 700px) {
+ .row {
+   display: contents;
+   justify-content: center
+  }
+
+  p {
+    width: fit-content;
+  }
+
+  .slide {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Restcontainer {
+    padding: 0;
+    width: auto;
+  }
+  
+  .carousel-caption {
+    position: initial;
+    color: black;
+  }
+
+  .container {
+    overflow-x: hidden;
+    padding: 0;
+    padding-bottom:60px;
+  }
+  .contact {
+    padding: 1rem;
+  }
 }
